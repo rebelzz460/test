@@ -1,0 +1,262 @@
+{
+  "title": "错题集",
+  "language": "zh-CN",
+  "classes": [
+    {
+      "id": "evidence-and-claim",
+      "title": "阅读证据与结论强度：事实、因果和统计对象",
+      "originals": [
+        {
+          "id": "reading-original",
+          "keywords": [
+            "文本证据",
+            "事实与因果",
+            "次数与人数",
+            "结论强度"
+          ],
+          "knowledge": [
+            "“由报告直接支持”要求结论能在材料中找到明确陈述或等义表述；不能仅凭生活经验补充材料没有提供的事实。阅读时要对齐主语、统计对象、时间范围与限定词。",
+            "事件总次数与不同个体的数量是两个统计对象。一个人可以贡献多次事件，因而次数变化不能单独确定人数变化；平均数也不意味着每个个体都相同。",
+            "两个变化先后发生或在同一时期出现，并不单独证明因果关系。断言某因素造成“全部”变化，比断言出现了变化更强，需要能排除其他解释的证据。"
+          ],
+          "question": [
+            {
+              "type": "text",
+              "text": "Reading exercise\nA library extended its opening hours on two weekdays.\nThe total number of visits increased that month.\nThe report did not record whether the same visitors returned more often.\n\nWhich statement is directly supported by the report?"
+            }
+          ],
+          "options": [
+            {
+              "label": "A",
+              "text": "Every visitor stayed longer."
+            },
+            {
+              "label": "B",
+              "text": "The total number of visits increased."
+            },
+            {
+              "label": "C",
+              "text": "Longer hours caused the entire increase in visits."
+            },
+            {
+              "label": "D",
+              "text": "The number of distinct visitors increased."
+            }
+          ],
+          "diagnostic": [
+            {
+              "type": "text",
+              "text": "1. 同一个人到馆两次，贡献多少次 visits、多少位 distinct visitors？\n2. 仅知道某项措施实施后一个指标上升，能否证明该措施造成了全部上升？请说明理由。"
+            }
+          ],
+          "diagnostic_answer": [
+            {
+              "type": "text",
+              "text": "1. 贡献 2 次 visits、1 位 distinct visitor。前者统计事件次数，后者对同一个人去重。\n2. 不能。时间先后或同期变化不能排除其他因素或重复行为的变化；材料没有提供足以识别全部因果贡献的证据。若只回答“不能”但未说明证据缺口，理由仍不完整。"
+            }
+          ],
+          "answer": "B",
+          "correct_labels": [
+            "B"
+          ],
+          "solution": [
+            {
+              "type": "text",
+              "text": "题目问报告直接支持的结论。报告第二句明确写道“The total number of visits increased that month.”，与 B 的统计对象和变化方向一致，因此选 B。\nA 增加了 every 和停留时间，材料没有任何停留时长信息。C 把两项同月变化改写为因果，并把原因扩大为 entire increase；材料并未排除其他因素。D 把总访问次数改成不同访客人数；同一批人更频繁来访也可能使访问次数上升，故不能由总次数推出 D。"
+            }
+          ],
+          "alternatives": [
+            {
+              "type": "text",
+              "text": "反例检验：假设两个月的不同访客人数相同，而每个人第二个月到馆更频繁，同时图书馆延长开放时间。这个情形可以满足材料中的全部陈述，却使 D 不成立。若访问增长还受到其他因素影响，C 的“全部由延时造成”也不成立。反例只证明这些选项不由材料必然推出，不是在断言现实中发生了该情形。"
+            }
+          ],
+          "diagnosis": [
+            {
+              "type": "text",
+              "text": "可见作答选择了 C，提示可能把同期变化当作因果，或忽略 entire 的结论强度；这只是待验证的假设。若诊断 2 答错，应先练习找出材料与因果结论之间缺失的证据；若诊断 2 答对而原题仍选 C，再检查是否漏读 directly supported 或 entire。诊断 1 用于进一步区分统计对象理解是否也有缺口。"
+            }
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "title": "定位原句并对齐含义",
+          "content": [
+            {
+              "type": "text",
+              "text": "先圈出题目要求，如直接支持、推断或解释原因；再找材料中的对应句，把选项的主语、指标、时间范围和限定词逐项对齐。允许等义改写，但不能添加材料未给出的身份、时长或原因。这条路径适用于事实细节题；材料明确给出的事实，不必再用经验猜测。"
+            }
+          ]
+        },
+        {
+          "title": "检验材料与选项能否同时一真一假",
+          "content": [
+            {
+              "type": "text",
+              "text": "把材料陈述作为已知条件，尝试构造一个所有条件都成立、而候选结论不成立的可能情形。若能构造，结论就不是必然受支持的；若不能构造，还不能仅凭“没想到反例”判为正确，仍需找到正面证据。对次数与人数，优先考虑同一人贡献多次记录的情形。"
+            }
+          ]
+        },
+        {
+          "title": "审查统计对象、量词与因果强度",
+          "content": [
+            {
+              "type": "text",
+              "text": "把 each/every、only、entire、caused、distinct 等词的要求写清楚。总量、人数、平均值和个体值要分别处理；先后关系与因果关系也要分别处理。若选项比材料多了一层“所有”“全部原因”或“不同个体”，检查材料是否真正补足了这层证据。此法适合排除强但无依据的选项，不能把所有强表述一律视为错误。"
+            }
+          ]
+        }
+      ],
+      "diagnosis": [
+        {
+          "type": "text",
+          "text": "先用诊断 1 检查是否能区分次数与去重人数，再用诊断 2 检查是否将先后关系当作全部因果。若两个概念都答对，则转向检查审题目标和英文限定词；若某个概念答错，先完成该概念的小例子，再做不同情境的迁移题。"
+        }
+      ],
+      "practice": [
+        {
+          "id": "reading-practice-1",
+          "question": [
+            {
+              "type": "text",
+              "text": "A school began offering an optional breakfast service. The number of breakfasts served increased in the following month. The report contained no information about students’ grades or how many different students used the service.\n\nWhich statement is directly supported?"
+            }
+          ],
+          "options": [
+            {
+              "label": "A",
+              "text": "Every student ate breakfast at school."
+            },
+            {
+              "label": "B",
+              "text": "The service improved students’ grades."
+            },
+            {
+              "label": "C",
+              "text": "The number of breakfasts served increased."
+            },
+            {
+              "label": "D",
+              "text": "More different students used the service."
+            }
+          ],
+          "answer": "C",
+          "correct_labels": [
+            "C"
+          ],
+          "knowledge": [
+            "对齐统计对象与材料证据：早餐供应份数不是不同学生人数，也不提供成绩变化的信息。"
+          ],
+          "solution": [
+            {
+              "type": "text",
+              "text": "材料明确报告 breakfasts served 的数量增加，因此 C 有直接依据。A 的 every 没有依据；B 的成绩信息在材料中明确缺失，也没有因果证据；D 将供应份数改成不同学生人数，重复使用服务可能产生同样的份数增长。只有 C 被直接支持。"
+            }
+          ],
+          "alternatives": [],
+          "diagnosis": []
+        },
+        {
+          "id": "reading-practice-2",
+          "question": [
+            {
+              "type": "text",
+              "text": "A centre recorded the following counts. “Distinct users” counts each person once within that week."
+            },
+            {
+              "type": "table",
+              "header_rows": 1,
+              "widths": [
+                1,
+                1.7,
+                1.7
+              ],
+              "rows": [
+                [
+                  "Week",
+                  "Recorded sessions",
+                  "Distinct users"
+                ],
+                [
+                  "1",
+                  "90",
+                  "30"
+                ],
+                [
+                  "2",
+                  "120",
+                  "30"
+                ]
+              ]
+            },
+            {
+              "type": "text",
+              "text": "Which statement is supported by the table?"
+            }
+          ],
+          "options": [
+            {
+              "label": "I",
+              "text": "Exactly the same 30 people used the centre in both weeks."
+            },
+            {
+              "label": "II",
+              "text": "The number of distinct users increased in week 2."
+            },
+            {
+              "label": "III",
+              "text": "Average recorded sessions per distinct user was greater in week 2."
+            },
+            {
+              "label": "IV",
+              "text": "Every user recorded exactly four sessions in week 2."
+            }
+          ],
+          "answer": "III",
+          "correct_labels": [
+            "III"
+          ],
+          "knowledge": [
+            "从表格进行有依据的推断：平均次数等于总次数除以不同个体数；相等的人数不能证明成员身份相同，平均数不能证明每个人的次数相同。"
+          ],
+          "solution": [
+            {
+              "type": "text",
+              "text": "第 1 周平均记录次数为 90/30 = 3，第 2 周为 120/30 = 4，故 III 成立。I 没有成员身份信息，人数相同不代表完全同一批人。II 与两周均为 30 的数据矛盾。IV 将平均数 4 当成人人都为 4；例如一人 3 次、另一人 5 次，其余 28 人各 4 次，总数仍为 120。III 是唯一有充分依据的选项。"
+            }
+          ],
+          "alternatives": [
+            {
+              "type": "text",
+              "text": "两周不同用户数都为 30，可以直接比较 120 与 90，判断第 2 周的平均次数更大；仍须保留“平均”限定，不能改成所有人都更多。"
+            }
+          ],
+          "diagnosis": []
+        },
+        {
+          "id": "reading-practice-3",
+          "question": [
+            {
+              "type": "text",
+              "text": "A museum counted 200 entries on Monday and 240 on Tuesday. It did not count distinct visitors. A reviewer concludes: “More individuals visited on Tuesday.”\n\nDoes this conclusion necessarily follow? Explain. If your answer is no, give one numerical counterexample consistent with both entry totals."
+            }
+          ],
+          "options": [],
+          "answer": "不必然成立；可以由同样多的人增加重复入馆次数产生总次数增长。",
+          "knowledge": [
+            "反例与证据边界：只需构造一个满足全部已知数据而不满足结论的情形，就能否定结论的必然性。事件次数增长不能单独确定不同个体数增长。"
+          ],
+          "solution": [
+            {
+              "type": "text",
+              "text": "例如两天都是同一批 40 位访客。周一每人入馆 5 次，共 40×5 = 200 次；周二每人入馆 6 次，共 40×6 = 240 次。两个总次数都吻合，而不同访客人数均为 40，没有增加，因此结论不是必然推出。\n评分要点：明确“不必然”（1 分）；给出同时满足 200 和 240 的具体计数方案（1 分）；说明方案中的不同访客人数没有增加，且多出的总次数来自重复行为（1 分）。其他满足这些条件的数字与表述同样有效；单说“人数未知”而没有题目要求的数值反例不算完整。"
+            }
+          ],
+          "alternatives": [],
+          "diagnosis": []
+        }
+      ]
+    }
+  ]
+}

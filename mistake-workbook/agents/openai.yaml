@@ -1,0 +1,4 @@
+interface:
+  display_name: "通用错题集"
+  short_description: "从各学科错题图片制作知识分类、诊断问答、逐题解析与新题补练的PDF错题集"
+  default_prompt: "使用 $mistake-workbook，根据我提交的错题图片制作按知识点分类的错题集。"
